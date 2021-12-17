@@ -6,28 +6,63 @@
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-`sour` is a complete [Cube 2: Sauerbraten](http://sauerbraten.org/) experience in the web delivered as a single Docker image
+`simulation` is a complete [Cube 2: Sauerbraten](http://sauerbraten.org/) experience in the web delivered as a single Docker image.
+
+
+It took me a while to figure out my reality. I'm really don't like being "too aware" of my surroundings.  It's starting to become a conterproductive powerup.  
+
+Whatever it is, I landed here. I think this is it.
+
+The last directory  .
 
 ## Introduction
 
-I have always loved playing Sauerbraten because of its simplicity: it's fast to download, easy to pick up, and keeps you in the action with instant respawns. Despite playing lots of games over the course of my life I haven't really found anything that scratches the same itch.
+Hello everyone, I thought this would be an interesting way to introduce myself to the DeSo community and the projects working behind it.
 
-Some years ago I found [BananaBread](https://github.com/kripken/BananaBread), which was a basic tech demo that uses Emscripten to compile Sauerbraten for the web. The project was limited in scope and done at a time when bandwidth was a lot more precious. It also lacked multiplayer out of the box.
+My name is Chris. 
 
-My goal was to ship an updated version of it in a single Docker image that I could deploy anywhere and play without forcing anyone to download the whole game. That's where `sour` comes in.
+I'm searching to take the mask off "god" and seek out the true reason for human life and who the existence is behind this incredible journey.
+
+I'm by no means an expert in any way about anything.  I wear a noob badge as a pledge of honor.  Instead, one can only claim to comprehend very little across a lot. 
+
+Education wasn't quite for me.  By education I'm referring to the education sysem in America.  Learning and experimenting with different technologies is what drives me in life.  Money has no value to me.  Whether it be fiat or crypto.  I only work to keep a healthy lifestyle and my everyday learning.  My belief here is to provide some sort of value.  As a citizen of this planet, I expect to do my part and contribute in any way I can for humanity.
+
+The words "Microsoft" and "blockchain" are two words that share a mutual frequency I once discovered many years ago.  One at a very young age, and the other quite recent if you think in terms of years.  While the tactic to note mutal relationship with big tech might gain traction in one form of society, it does no good in this one.  This one, where are we? How are you processing this data?  How and why is this possible?  It is so because of ideas.  Some perhaps might contradict with another.  Entities who collide react a certain way from their relative positions.  The greater the force, the greater distance of the oppsing reaction.  Linux, Mozilla, Microsoft, Apple, Google, and many of the most common by not so often recognized resources that help make the building efforts a bit easier were technological growth proven by Metcalfe's law such as bluetooth, wifi, lan, dns, and many others.
+
+"Cheat codes" are what I call them.  "Hacks" or "Hax", depending on where you're coming from.  As a child, my obsession was in technology.  Punishment was the effect after dismantling the family VHS tape player one day.  Understanding the inner workings to redesign and model for my fit was a common thing.  The ideas generated and discovering ways to connect complete opposites often delivered mental peace.  Ideas begin to floor and my pre-frontal begins to tickle.  Chills run down my spine and happiness begins to refil an empty heart.  This is my safe place.  My home.  It's where I feel where I need to be.
+
+Perhaps there is no reality.  Maybe it's all just fake.  Hopefully not testnet fake.  But since we're sharing experiences and ideas I'll go ahead and say it...
+
+
+
+Yea right! 🙄
+
+silly noob, there's no way. 
+
+lol...
+
+right?
+
+wait...
+fr?
+could it really?!
+
+you mean to tell me that this is JUST a simulation?
+
+
+
+
+
+To be continued...
+
 
 ## Project goals
-
-The Sauerbraten community is small and it will probably always remain that way. There are a few main goals for this project:
-* Make it easier to play Sauerbraten. Web technologies and bandwidth have gotten to the point where it is practical and desirable to play Sauerbraten in the browser, without forcing players to download a desktop client.
-* Mimic the experience of playing the original game as closely as possible. While it is possible that Sour may someday support arbitrary game modes, assets, clients, and server code, the vanilla game experience should still be available.
-* Deployment of Sour on your own infrastructure with whatever configuration you like should be easy. Every aspect of Sour should be configurable.
 
 ## Getting started
 
 All you need is Docker and [Earthly](https://earthly.dev/) to build. Just run `earthly +image` and it will make the `sour:latest` image.
 
-To use the `sour` image, expose ports `1234` and `28785` when you run a container like this:
+To use the `simulation` image, expose ports `1234` and `28785` when you run a container like this:
 
 ```bash
 docker run --rm -it -p 1234:1234 -p 28785:28785 sour:latest
@@ -51,9 +86,9 @@ The resulting Docker image will run services on these ports when started:
 
 ## Contributing
 
-All contributions are welcome. Developing Sour is made a bit easier with Earthly but there are still some caveats.
+All contributions are welcome.
 
-To hack on Sour:
+To hack on simulation:
 1. Run `earthly +game` (compiles the game), `earthly +assets` (builds its assets for the web,) and `earthly +image-slim` (builds the Sour image without assets.)
 2. If you want to work on multiplayer, run this Docker container: `docker run --rm -it -p 28785:28785 sour:slim`. It makes the QServCollect server available (over a WebSocket) on `28785`.
 3. Start the web client.
@@ -62,7 +97,19 @@ To hack on Sour:
 4. Navigate to `http://localhost:1234`. To recompile the game, just do `earthly +game` and refresh the page. The same applies to `earthly +assets`. If you change the client code, also just refresh.
 
 Check out the roadmap below to see what you might be able to help with.
-
+* [.] Integrate DeSo Protocol
+* [ ] Landing page
+* [ ] DeSo user profile
+* [ ] Discord or Slack Server
+* [X] Domain Name
+* [ ] DeSo node
+* [X] Node server
+* [ ] Graphic design
+* [ ] NFT Game Assets
+* [ ] NFT Marketplace & Minting Landing Page
+* [ ] NFT Game Characters
+* [ ] Story line development
+* [ ] Game board designer
 * [X] Fix performance issues
 * [X] Ensure the base assets are loaded prior to starting the game
 * [X] Evict the previous map from memory when we change maps
