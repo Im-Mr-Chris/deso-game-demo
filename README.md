@@ -1,4 +1,4 @@
-# sour
+# simulation
 <p align="center">
   <img src="gh-assets/header.gif">
 </p>
